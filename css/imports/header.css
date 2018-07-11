@@ -240,6 +240,7 @@ body.stretched #header.full-header .container {
 
 #primary-menu ul li:hover > a,
 #primary-menu ul li.current > a { color: #1ABC9C; }
+#primary-menu ul li.highlight > a { color: #FF5C26; }
 
 #primary-menu > ul > li.sub-menu > a > div { }
 
