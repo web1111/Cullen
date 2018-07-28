@@ -26,4 +26,9 @@
 
 }
 
+.swiper-container img { height: 275px}
+.swiper-pagination {
+    bottom: 95%;
+}
+
 
