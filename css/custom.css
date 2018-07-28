@@ -14,7 +14,7 @@
 
 #header.sticky-header .button { margin: 6px 0 6px 15px; }
 
-@media (max-width: 991px) {
+@media (max-width: 100%) {
 
 	#header .button {
 		position: absolute;
@@ -26,9 +26,14 @@
 
 }
 
-.swiper-container img { height: 275px}
-.swiper-pagination {
-    bottom: 95%;
+.slider-caption img {
+	top: -150px;
+	height: auto;
+	width: auto;
+}
+
+.slider-caption h1 {
+	float: right;
 }
 
 
