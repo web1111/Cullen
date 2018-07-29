@@ -23,17 +23,12 @@
 		left: auto;
 		right: 15px;
 	}
-
 }
 
 .slider-caption img {
-	top: -150px;
 	height: auto;
 	width: auto;
 }
 
-.slider-caption h1 {
-	float: right;
-}
 
 
