@@ -5,7 +5,7 @@
 	Overwriting Default Theme Styles for Better Hanlding Updates
 -----------------------------------------------------------------*/
 
-#header.semi-transparent { background-color: rgba(255,255,255,0.3); }
+#header.semi-transparent { background-color: rgba(255,255,255,0.5); }
 
 #header .button {
 	margin: 29px 0 29px 15px;
