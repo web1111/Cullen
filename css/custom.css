@@ -6,20 +6,20 @@
 -----------------------------------------------------------------*/
 
 #header .button {
-	margin: 25px 0 25px 15px;
+	margin: 29px 0 29px 15px;
 	-webkit-transition: all .4s ease;
 	-o-transition: all .4s ease;
 	transition: all .4s ease;
 }
 
-#header.sticky-header .button { margin: 6px 0 6px 15px; }
+#header.sticky-header .button { margin: 7px 0 7px 15px; }
 
 @media (max-width: 100%) {
 
 	#header .button {
 		position: absolute;
 		margin: 0;
-		top: 33px;
+		top: 28px;
 		left: auto;
 		right: 15px;
 	}
