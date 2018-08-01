@@ -32,5 +32,8 @@
 	width: auto;
 }
 
+.device-ipad .visible-ipad { display: block !important; }
+.device-ipad .hidden-ipad { display: none !important; }
+
 
 
