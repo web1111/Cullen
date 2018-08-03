@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<html dir="ltr" lang="en">
 <head>
-
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="CullenCommunity" />
 
@@ -10,7 +9,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
-	
 	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
@@ -19,7 +17,6 @@
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
 
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
-	<link rel="stylesheet" href="css/custom.css" type="text/css" />
 	<link rel="stylesheet" href="css/colors.css" type="text/css" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -28,13 +25,28 @@
 	============================================= -->
 	<title>Cullen Community &amp; Residential Centre</title>
 
+	<style>
+		#header.semi-transparent { background-color: rgba(255,255,255,0.5); }
+
+		#header .button {
+			margin: 29px 0 29px 15px;
+			-webkit-transition: all .4s ease;
+			-o-transition: all .4s ease;
+			transition: all .4s ease;
+		}
+
+		#header.sticky-header .button { margin: 7px 0 7px 15px; }
+	
+	</style>
+
 </head>
 
-<body class="stretched">
+<body class="stretched device-x1">
 
 	<!-- Document Wrapper
 	============================================= -->
-	<div id="wrapper" class="clearfix">
+	<div id="wrapper" class="clearfix" style="animation-duration: 1500ms; opacity: 1;">
+			
 
 
 		<!-- Header
@@ -96,10 +108,10 @@
 		
 
 		
-		<section id="slider" class="slider-element slider-parallax swiper_wrapper full-screen clearfix" data-autoplay="15000" data-speed="800" data-loop="true">
-			<div class="slider-parallax-inner">
-				<div class="swiper-container swiper-parent">
-					<div class="swiper-wrapper">
+		<section id="slider" class="slider-element slider-parallax swiper_wrapper full-screen clearfix slider-parallax-visible" style="height: 297px;" data-autoplay="15000" data-speed="800" data-loop="true">
+			<div class="slider-parallax-inner" style="height: 297px; transform: translateY(0px);">
+				<div class="swiper-container swiper-parent swiper-container-horizontal" style="cursor: -webkit-grab;">
+					<div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
 						<div class="swiper-slide" style="background-image: url('images/cullen/gopr1358.jpg');">
 							<div class="container center clearfix">
 								<div class="slider-caption slider-caption-center dark">
