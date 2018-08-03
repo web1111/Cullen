@@ -15,7 +15,7 @@
 }
 
 #header.sticky-header .button { margin: 7px 0 7px 15px; }
-
+/*
 @media (max-width: 100%) {
 
 	#header .button {
@@ -31,9 +31,7 @@
 	height: auto;
 	width: auto;
 }
-
-.device-ipad .visible-ipad { display: block !important; }
-.device-ipad .hidden-ipad { display: none !important; }
+*/
 
 
 
