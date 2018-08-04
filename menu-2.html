@@ -47,9 +47,11 @@
 		}
 
 		@media only screen 
-		and (min-device-width: 1024px) 
-		and (max-device-width: 1366px) 
-		and (-webkit-min-device-pixel-ratio: 1.5) {
+		and (min-device-width: 834px) 
+		and (max-device-width: 834px) 
+		and (orientation: portrait) 
+		and (-webkit-min-device-pixel-ratio: 2) {
+
 			#header .btn {
 				position: absolute;
 				margin: 0;
@@ -57,7 +59,26 @@
 				left: auto;
 				right: 15px;
 			}
-		}
+	  
+	  }
+	  
+	  /* Landscape */
+	  @media only screen 
+		and (min-width: 1112px) 
+		and (max-width: 1112px) 
+		and (orientation: landscape) 
+		and (-webkit-min-device-pixel-ratio: 2)
+	   {
+
+		#header .btn {
+				position: absolute;
+				margin: 0;
+				top: 29px;
+				left: auto;
+				right: 15px;
+			}
+	  
+	  }
 	
 	</style>
 
