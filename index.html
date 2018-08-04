@@ -35,14 +35,46 @@
 		}
 
 		#header.sticky-header .button { margin: 7px 0 7px 15px; }
-	
-	</style>
 
-	<style id="fit-vids-style">
-		.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}
-		.fluid-width-video-wrapper iframe,
-		.fluid-width-video-wrapper object,
-		.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}
+		@media (max-width: 991px) {
+			#header .button {
+				position: absolute;
+				margin: 0;
+				top: 29px;
+				left: auto;
+				right: 15px;
+			}
+		}
+
+		@media only screen 
+		and (min-device-width: 834px) 
+		and (max-device-width: 834px) 
+		and (orientation: portrait) 
+		{
+			#header .button {
+				position: absolute;
+				margin: 0;
+				top: 29px;
+				left: auto;
+				right: 15px;
+			}
+		}
+		
+		/* Landscape */
+		@media only screen 
+			and (min-width: 1112px) 
+			and (max-width: 1112px) 
+			and (orientation: landscape)
+		{
+			#header .button {
+				position: absolute;
+				margin: 0;
+				top: 29px;
+				left: auto;
+				right: 15px;
+			}
+
+		}
 	</style>
 
 </head>
@@ -53,8 +85,6 @@
 	============================================= -->
 	<div id="wrapper" class="clearfix" >
 			
-
-
 		<!-- Header
 		============================================= -->
 		<header id="header" class="transparent-header style-2 semi-transparent  not-dark" data-sticky-class="not-dark">
@@ -91,20 +121,10 @@
 									<li><a href="#" data-scrollto="#content" data-offset="100"><div>Gallery</div></a></li>
 						</ul>
 
-
-						
-
 						<a href="#" data-scrollto="#content" data-offset="100" class="button button-circle button-reveal button-large button-red tright"><i class="icon-angle-right"></i><span>Support Us</span></a>
 
-					
-			
-	
 						</nav><!-- #primary-menu end -->
 
-
-						
-						
-					
 					</div>
 
 				</div>
