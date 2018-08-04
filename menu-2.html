@@ -181,6 +181,35 @@
 
 		<!-- Content
 		============================================= -->
+
+		<section id="content">
+			
+						<section id="slider" class="slider-element full-screen clearfix" style="background: url('images/cullen/GOPR1405.jpg'); background-repeat: no-repeat; background-size: cover;">
+							
+							<div class="container-fluid clearfix vertical-middle">
+				
+								<div class="heading-block title-center nobottomborder">
+									<h1>Site is Under Construction</h1>
+									<h3>Please check back again soon</h3>
+								</div>
+				
+								<div id="countdown-ex1" class="countdown countdown-large coming-soon divcenter bottommargin" style="max-width:700px;"></div>
+				
+								<div class="divider divider-center divider-short divider-margin"><i class="icon-time"></i></div>
+			
+								
+				
+							</div>
+			
+							
+				
+						</section>
+			
+						
+			
+					</section><!-- #content end -->
+
+		<!--
 		<section id="content">
 
 			<div class="content-wrap">
@@ -210,6 +239,7 @@
 			</div>
 
 		</section><!-- #content end -->
+	-->
 
 		<!-- Footer
 		============================================= -->
@@ -455,6 +485,14 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="js/functions.js"></script>
+
+	<script>
+		
+		jQuery(document).ready( function($){
+			var newDate = new Date(2018, 8, 31);
+			$('#countdown-ex1').countdown({until: newDate});
+		});
+	</script>
 
 </body>
 </html>
