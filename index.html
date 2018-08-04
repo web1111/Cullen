@@ -27,7 +27,22 @@
 	<style>
 		#header.semi-transparent { background-color: rgba(255,255,255,0.5); }
 
-		#header .button {
+		#primary-menu .button {
+			position: relative;
+			top: 60%;
+			transform: translateY(-40%);
+		}
+
+		.logo-page-center {
+			max-width: 30%;
+			position: relative !important;
+			float: none !important;
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+
+		/*
+		#primary-menu .button {
 			margin: 29px 0 29px 15px;
 			-webkit-transition: all .4s ease;
 			-o-transition: all .4s ease;
@@ -36,45 +51,45 @@
 
 		#header.sticky-header .button { margin: 7px 0 7px 15px; }
 
-		@media (max-width: 991px) {
-			#header .button {
+		@media (min-width: 991px) and (max-width: 1366px) {
+			#primary-menu .button {
 				position: absolute;
 				margin: 0;
 				top: 29px;
 				left: auto;
-				right: 15px;
 			}
 		}
 
-		@media only screen 
-		and (min-device-width: 834px) 
-		and (max-device-width: 834px) 
-		and (orientation: portrait) 
-		{
-			#header .button {
-				position: absolute;
-				margin: 0;
-				top: 29px;
-				left: auto;
-				right: 15px;
-			}
-		}
+
+		@media (max-width: 990px) {
 		
-		/* Landscape */
-		@media only screen 
-			and (min-width: 1112px) 
-			and (max-width: 1112px) 
-			and (orientation: landscape)
-		{
-			#header .button {
-				position: absolute;
-				margin: 0;
-				top: 29px;
-				left: auto;
-				right: 15px;
+			#primary-menu .container #primary-menu-trigger {
+				top: 5px;
+				left: 0;
+			}
+		
+			#primary-menu > a {
+				display: none;
+				float: none !important;
+				border: 0 !important;
+				padding: 0 !important;
+				margin: 0 !important;
+				-webkit-transition: none;
+				-o-transition: none;
+				transition: none;
 			}
 
+			#primary-menu ul li .button {
+				float: none;
+				margin: 0 !important;
+				text-align: left !important;
+				border-top: 1px solid #EEE;
+			}
+
+			#primary-menu > a > .button { padding-top: 60px !important; }
+			
 		}
+		*/
 	</style>
 
 </head>
@@ -83,7 +98,7 @@
 
 	<!-- Document Wrapper
 	============================================= -->
-	<div id="wrapper" class="clearfix" >
+	<div id="wrapper" class="clearfix" style="animation-duration: 1500ms;" >
 			
 		<!-- Header
 		============================================= -->
@@ -94,6 +109,10 @@
 					<div class="container clearfix">
 
 						<div id="primary-menu-trigger"><i class="icon-reorder "></i></div>
+
+						<div id="logo">
+							<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/textlogo.png" alt="cullencrc.org.uk"></a>
+						</div><!-- #logo end -->
 
 						<!-- Primary Navigation
 						============================================= -->
@@ -119,10 +138,8 @@
 										</ul>
 									</li>
 									<li><a href="#" data-scrollto="#content" data-offset="100"><div>Gallery</div></a></li>
-						</ul>
-
-						<a href="#" data-scrollto="#content" data-offset="100" class="button button-circle button-reveal button-large button-red tright"><i class="icon-angle-right"></i><span>Support Us</span></a>
-
+									<li><a href="#" data-scrollto="#content" data-offset="100"><div class="button button-circle button-border button-red">Support Us</div></a></li>
+								</ul>
 						</nav><!-- #primary-menu end -->
 
 					</div>
@@ -132,14 +149,14 @@
 
 		</header><!-- #header end -->
 		
-		<section id="slider" class="slider-element slider-parallax swiper_wrapper full-screen clearfix slider-parallax-visible" data-autoplay="15000" data-speed="800" data-loop="true">
+		<section id="slider" class="slider-element slider-parallax swiper_wrapper full-screen clearfix slider-parallax-visible" data-autoplay="15000" data-loop="true">
 			<div class="slider-parallax-inner">
 				<div class="swiper-container swiper-parent swiper-container-horizontal" style="cursor: -webkit-grab;">
-					<div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+					<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-2796px, 0px, 0px);">
 						<div class="swiper-slide" style="background-image: url('images/cullen/gopr1358.jpg');">
 							<div class="container center clearfix">
 								<div class="slider-caption slider-caption-center dark">
-									<img class="divcenter" src="images/logo-blue250.png" alt="cullen crc logo">
+									<img class="logo-page-center" src="images/logo-blue250.png" alt="cullen crc logo">
 									<h1 data-caption-animate="fadeInUp" data-caption-delay="200">Visitors Welcome<i class="i-plain i-xlarge divcenter icon-line-heart"></i></h1>
 								</div>
 							</div>
@@ -147,7 +164,7 @@
 						<div class="swiper-slide" style="background-image: url('images/cullen/gopr1348.jpg');">
 							<div class="container clearfix">				
 								<div class="slider-caption slider-caption-center dark">
-										<img class="divcenter" src="images/logo-orange250.png" style="float: right;" alt="cullen crc logo">
+										<img class="logo-page-center" src="images/logo-orange250.png" style="float: right;" alt="cullen crc logo">
 										<p data-caption-animate="fadeInUp" data-caption-delay="200">Run by local volunteers, we are now dependent on support and funding from our extended community, helping to keep our facilities open &amp; available for all</p>
 								</div>
 							</div>
@@ -155,7 +172,7 @@
 						<div class="swiper-slide" style="background-image: url('images/cullen/gopr1392.jpg'); background-position: center top;">
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center dark">
-									<img class="divcenter" src="images/logo-green250.png" style="float: left;" alt="cullen crc logo">
+									<img class="logo-page-center" src="images/logo-green250.png" style="float: left;" alt="cullen crc logo">
 									<p data-caption-animate="fadeInUp" data-caption-delay="200">We provide group accommodation for visitors from near and far, as well as offer a range of facilities available for bookings throughout the year</p>
 								</div>
 							</div>
@@ -163,6 +180,7 @@
 					</div>
 					<div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
 					<div class="slider-arrow-right"><i class="icon-angle-right"></i></div>
+					<div class="slide-number"><div class="slide-number-current">3</div><span>/</span><div class="slide-number-total">3</div></div>
 				</div>
 
 				<a href="#" data-scrollto="#content" data-offset="100" class="dark one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
