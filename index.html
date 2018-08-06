@@ -25,12 +25,22 @@
 	<title>Cullen Community &amp; Residential Centre</title>
 
 	<style>
-		#header.semi-transparent { background-color: rgba(255,255,255,0.5); }
+		
+		#header.semi-transparent {
+			background-color: rgba(255,255,255,0.5); }
 
 		#primary-menu .button {
 			position: relative;
-			top: 60%;
+			top: 70%;
 			transform: translateY(-40%);
+			
+			margin: 5px;
+			padding: 0 20px;
+			font-size: 12px;
+			height: 35px;
+			line-height: 35px;
+			/*background-color: #C02942;*/
+
 		}
 
 		.logo-page-center {
@@ -40,6 +50,9 @@
 			margin-left: auto !important;
 			margin-right: auto !important;
 		}
+
+	
+		
 	</style>
 
 </head>
@@ -52,7 +65,7 @@
 			
 		<!-- Header
 		============================================= -->
-		<header id="header" class="transparent-header style-2 semi-transparent  not-dark" data-sticky-class="not-dark">
+		<header id="header" class="transparent-header style-2 semi-transparent not-dark" data-sticky-class="not-dark">
 				
 			<div id="header-wrap" >	
 
@@ -61,20 +74,21 @@
 						<div id="primary-menu-trigger"><i class="icon-reorder "></i></div>
 
 						<div id="logo">
-							<a href="index.html" class="standard-logo" data-dark-logo="images/textlogo-dark.png"><img src="images/textlogo.png" alt="cullencrc.org.uk"></a>
-							<a href="index.html" class="retina-logo" data-dark-logo="images/textlogo-dark@2x.png"><img src="images/textlogo@2x.png" alt="cullencrc.org.uk"></a>
+							<a href="#" data-scrollto="#header" class="standard-logo" data-dark-logo="images/textlogo-dark.png"><img src="images/textlogo.png" alt="cullencrc.org.uk"></a>
+							<a href="#" data-scrollto="#header" class="retina-logo" data-dark-logo="images/textlogo-dark@2x.png"><img src="images/textlogo@2x.png" alt="cullencrc.org.uk"></a>
 						</div><!-- #logo end -->
 
 						<!-- Primary Navigation
 						============================================= -->
-						<nav id="primary-menu" class="style-2 center with-arrows not-dark noborder">
+						<nav id="primary-menu" class="style-2 center not-dark noborder">
 
 								<ul class="sf-js-enabled" style="touch-action: pan-y;">
-									<li><a href="#" data-scrollto="#header"><div>Home</div></a></li>
+									<li><a href="#" data-scrollto="#header" data-offset="100"><div>Home</div></a></li>
 									<li><a href="#" data-scrollto="#content" data-offset="100"><div>Facilities</div></a>
 										<ul>
 											<li><a href="#" data-scrollto="#content" data-offset="100"><div>Community Centre</div></a></li>
 											<li><a href="#" data-scrollto="#content" data-offset="100"><div>Residential Centre</div></a></li>
+											
 										</ul>
 									</li>
 									<li><a href="#" data-scrollto="#content" data-offset="100"><div>Activities</div></a></li>
@@ -86,10 +100,11 @@
 											<li><a href="#" data-scrollto="#content" data-offset="100"><div>Local Amenities</div></a></li>
 											<li><a href="#" data-scrollto="#content" data-offset="100"><div>Getting Here</div></a></li>
 											<li><a href="#" data-scrollto="#content" data-offset="100"><div>Who we are</div></a></li>
+											<li><a href="#" data-scrollto="#content" data-offset="100"><div>Gallery</div></a></li>
 										</ul>
 									</li>
-									<li><a href="#" data-scrollto="#content" data-offset="100"><div>Gallery</div></a></li>
-									<li><a href="#" data-scrollto="#content" data-offset="100"><div class="button button-circle button-border button-red">Support Us</div></a></li>
+									
+									<li><a href="#" data-scrollto="#content" data-offset="100"><div class="button  button-circle button-red button-3d">Support Us</div></a></li>
 								</ul>
 						</nav><!-- #primary-menu end -->
 
