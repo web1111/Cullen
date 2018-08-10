@@ -6,7 +6,7 @@
 
 	<!-- Stylesheets
 	============================================= -->
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700|Lato:300,400,400i,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
@@ -25,24 +25,34 @@
 	<title>Cullen Community &amp; Residential Centre</title>
 
 	<style>
-		#header.semi-transparent { background-color: rgba(255,255,255,0.5); }
+		
+		#header.semi-transparent {
+			background-color: rgba(255,255,255,0.5); }
 
-		#header .button {
-			margin: 29px 0 29px 15px;
-			-webkit-transition: all .4s ease;
-			-o-transition: all .4s ease;
-			transition: all .4s ease;
+		#primary-menu .button {
+			position: relative;
+			top: 60%;
+			transform: translateY(-40%);
+			
+			margin: 5px;
+			padding: 0 20px;
+			font-size: 14px;
+			height: 40px;
+			line-height: 40px;
+			/*background-color: #C02942;*/
+
 		}
 
-		#header.sticky-header .button { margin: 7px 0 7px 15px; }
-	
-	</style>
+		.logo-page-center {
+			max-width: 30%;
+			position: relative !important;
+			float: none !important;
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
 
-	<style id="fit-vids-style">
-		.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}
-		.fluid-width-video-wrapper iframe,
-		.fluid-width-video-wrapper object,
-		.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}
+	
+		
 	</style>
 
 </head>
@@ -60,13 +70,11 @@
 
 	<!-- Document Wrapper
 	============================================= -->
-	<div id="wrapper" class="clearfix" >
+	<div id="wrapper" class="clearfix" style="animation-duration: 1500ms;" >
 			
-
-
 		<!-- Header
 		============================================= -->
-		<header id="header" class="transparent-header style-2 semi-transparent  not-dark" data-sticky-class="not-dark">
+		<header id="header" class="transparent-header style-2 semi-transparent not-dark" data-sticky-class="not-dark">
 				
 			<div id="header-wrap" >	
 
@@ -74,16 +82,22 @@
 
 						<div id="primary-menu-trigger"><i class="icon-reorder "></i></div>
 
+						<div id="logo">
+							<a href="#" data-scrollto="#header" class="standard-logo" data-dark-logo="images/textlogo-dark.png"><img src="images/textlogo.png" alt="cullencrc.org.uk"></a>
+							<a href="#" data-scrollto="#header" class="retina-logo" data-dark-logo="images/textlogo-dark@2x.png"><img src="images/textlogo@2x.png" alt="cullencrc.org.uk"></a>
+						</div><!-- #logo end -->
+
 						<!-- Primary Navigation
 						============================================= -->
-						<nav id="primary-menu" class="style-2 center with-arrows not-dark noborder">
+						<nav id="primary-menu" class="style-2 center not-dark noborder">
 
 								<ul class="sf-js-enabled" style="touch-action: pan-y;">
-									<li><a href="#" data-scrollto="#header"><div>Home</div></a></li>
+									<li><a href="#" data-scrollto="#header" data-offset="100"><div>Home</div></a></li>
 									<li><a href="#" data-scrollto="#content" data-offset="100"><div>Facilities</div></a>
 										<ul>
 											<li><a href="#" data-scrollto="#content" data-offset="100"><div>Community Centre</div></a></li>
 											<li><a href="#" data-scrollto="#content" data-offset="100"><div>Residential Centre</div></a></li>
+											
 										</ul>
 									</li>
 									<li><a href="#" data-scrollto="#content" data-offset="100"><div>Activities</div></a></li>
@@ -95,25 +109,14 @@
 											<li><a href="#" data-scrollto="#content" data-offset="100"><div>Local Amenities</div></a></li>
 											<li><a href="#" data-scrollto="#content" data-offset="100"><div>Getting Here</div></a></li>
 											<li><a href="#" data-scrollto="#content" data-offset="100"><div>Who we are</div></a></li>
+											<li><a href="#" data-scrollto="#content" data-offset="100"><div>Gallery</div></a></li>
 										</ul>
 									</li>
-									<li><a href="#" data-scrollto="#content" data-offset="100"><div>Gallery</div></a></li>
-						</ul>
-
-
-						
-
-						<a href="#" data-scrollto="#content" data-offset="100" class="button button-circle button-reveal button-large button-red tright"><i class="icon-angle-right"></i><span>Support Us</span></a>
-
-					
-			
-	
+									
+									<li><a href="#" data-scrollto="#content" data-offset="100"><div class="button  button-circle button-red button-3d">Support Us</div></a></li>
+								</ul>
 						</nav><!-- #primary-menu end -->
 
-
-						
-						
-					
 					</div>
 
 				</div>
@@ -121,37 +124,38 @@
 
 		</header><!-- #header end -->
 		
-		<section id="slider" class="slider-element slider-parallax swiper_wrapper full-screen clearfix slider-parallax-visible" data-autoplay="15000" data-speed="800" data-loop="true">
+		<section id="slider" class="slider-element slider-parallax swiper_wrapper full-screen clearfix slider-parallax-visible" data-autoplay="15000" data-loop="true">
 			<div class="slider-parallax-inner">
 				<div class="swiper-container swiper-parent swiper-container-horizontal" style="cursor: -webkit-grab;">
 					<div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
 						<div class="swiper-slide" style="background-image: url('images/cullen/gopr1358.jpg');">
 							<div class="container center clearfix">
 								<div class="slider-caption slider-caption-center dark">
-									<img class="divcenter" src="images/logo-blue250.png" alt="cullen crc logo">
-									<h1 data-caption-animate="fadeInUp" data-caption-delay="200">Visitors Welcome<i class="i-plain i-xlarge divcenter icon-line-heart"></i></h1>
+									<img class="logo-page-center" src="images/logo-blue250.png" alt="cullen crc logo">
+									<h1 data-caption-animate="fadeInUp" data-caption-delay="100">Not just for locals - welcome ALL!</h1>
 								</div>
 							</div>
 						</div>
 						<div class="swiper-slide" style="background-image: url('images/cullen/gopr1348.jpg');">
 							<div class="container clearfix">				
 								<div class="slider-caption slider-caption-center dark">
-										<img class="divcenter" src="images/logo-orange250.png" style="float: right;" alt="cullen crc logo">
-										<p data-caption-animate="fadeInUp" data-caption-delay="200">Run by local volunteers, we are now dependent on support and funding from our extended community, helping to keep our facilities open &amp; available for all</p>
+										<img class="logo-page-center" src="images/logo-orange250.png" style="float: right;" alt="cullen crc logo">
+										<h3 data-caption-animate="fadeInUp" data-caption-delay="100">Run by local volunteers, we are dependent on support and funding from our extended community, helping to keep our facilities open &amp; available for all</h3>
 								</div>
 							</div>
 						</div>
 						<div class="swiper-slide" style="background-image: url('images/cullen/gopr1392.jpg'); background-position: center top;">
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center dark">
-									<img class="divcenter" src="images/logo-green250.png" style="float: left;" alt="cullen crc logo">
-									<p data-caption-animate="fadeInUp" data-caption-delay="200">We provide group accommodation for visitors from near and far, as well as offer a range of facilities available for bookings throughout the year</p>
+									<img class="logo-page-center" src="images/logo-green250.png" style="float: left;" alt="cullen crc logo">
+									<h3 data-caption-animate="fadeInUp" data-caption-delay="100">We provide group accommodation for visitors from near and far, as well as offer a range of facilities available for bookings throughout the year</h3>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
 					<div class="slider-arrow-right"><i class="icon-angle-right"></i></div>
+					<div class="slide-number"><div class="slide-number-current">3</div><span>/</span><div class="slide-number-total">3</div></div>
 				</div>
 
 				<a href="#" data-scrollto="#content" data-offset="100" class="dark one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>

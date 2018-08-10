@@ -394,6 +394,7 @@ span.middot {
 .inline-block {
 	float: none !important;
 	display: inline-block !important;
+	vertical-align: top;
 }
 
 .center { text-align: center !important; }
