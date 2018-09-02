@@ -65,12 +65,14 @@
 </head>
 
 
-<body class="stretched">
+<body class="stretched device-xl gototop-active">
 
 	<!-- Document Wrapper
 	============================================= -->
 	<div id="wrapper" class="clearfix" style="animation-duration: 200ms;" >
 			
+		<!-- Header
+		============================================= -->
 		<header id="header" class="transparent-header style-2 semi-transparent not-dark" data-sticky-class="not-dark">
 				
 			<div id="header-wrap" >	
@@ -89,9 +91,9 @@
 						<nav id="primary-menu" class="style-2 center not-dark noborder">
 
 								<ul class="sf-js-enabled" style="touch-action: pan-y;">
-									<li class="current"><a href="#" data-scrollto="header"><div>Home</div></a></li>
-									<li><a href="facilities.html" ><div>Facilities</div></a></li>
-									<li><a href="activities.html"><div>Activities</div></a></li>
+									<li><a href="index.html"><div>Home</div></a></li>
+									<li><a href="facilities.html"><div>Facilities</div></a></li>
+									<li class="current"><a href="#" data-scrollto="header"><div>Activities</div></a></li>
 									<li><a href="whats-on.html"><div>Whats On</div></a></li>
 									<li><a href="bookings.html"><div>Bookings</div></a></li>
 									<li><a href="about.html"><div>About</div></a>
@@ -112,54 +114,25 @@
 					</div>
 
 				</div>
+				
+
 		</header><!-- #header end -->
-		
-		<section id="slider" class="slider-element slider-parallax swiper_wrapper full-screen clearfix slider-parallax-visible" data-autoplay="15000" data-loop="true">
-			<div class="slider-parallax-inner">
-				<div class="swiper-container swiper-parent swiper-container-horizontal" style="cursor: -webkit-grab;">
-					<div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
-						<div class="swiper-slide" style="background-image: url('images/cullen/gopr1358.jpg');">
-							<div class="container center clearfix">
-								<div class="slider-caption slider-caption-center dark">
-									<img class="logo-page-center" src="images/logo-red250.png" alt="cullen crc logo">
-									<h1 data-caption-animate="fadeInUp" data-caption-delay="100">Not just for locals - welcome ALL!</h1>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide" style="background-image: url('images/cullen/gopr1348.jpg');">
-							<div class="container clearfix">				
-								<div class="slider-caption slider-caption-center dark">
-										<img class="logo-page-center" src="images/logo-orange250.png" style="float: right;" alt="cullen crc logo">
-										<h3 data-caption-animate="fadeInUp" data-caption-delay="100">As a registered charity run by local volunteers, we're dependent on support and funding from our extended community, helping to keep our facilities open &amp; available for all</h3>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide" style="background-image: url('images/cullen/gopr1392.jpg'); background-position: center top;">
-							<div class="container clearfix">
-								<div class="slider-caption slider-caption-center dark">
-									<img class="logo-page-center" src="images/logo-green250.png" style="float: left;" alt="cullen crc logo">
-									<h3 data-caption-animate="fadeInUp" data-caption-delay="100">To help support our aims, we provide group accommodation for visitors from near and far, as well as offer a range of activities and facilities available for bookings throughout the year</h3>
-								</div>
-							</div>
-						</div>
+		<section class="page-title-parallax page-title-dark skrollable skrollable-between page-title-left" id="page-title" style='background-position: 0px -125.44px; padding: 120px 0px; background-image: url("images/cullen/gopr1392.jpg"); background-size: cover;' data-top-bottom="background-position:0px -300px;" data-bottom-top="background-position:0px 0px;">
+			<div class="container clearfix">
+					<div class="col_one_fifth">
+						<img style="vertical-align:bottom;" src="images/logo-orange200.png" alt="cullen crc logo">
 					</div>
-					<div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
-					<div class="slider-arrow-right"><i class="icon-angle-right"></i></div>
-					<div class="slide-number"><div class="slide-number-current">3</div><span>/</span><div class="slide-number-total">3</div></div>
-				</div>
-
-				<a href="#" data-scrollto="#content" data-offset="100" class="dark one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
-
+					<div class="col_four_fifth col_last dark" style="top: 50px;">
+							<h1>Activities</h1>
+							<h3>Types of activities available at the centre.<br/>Want to organise a new activity?</h3>
+					</div>
 			</div>
 		</section>
-
 
 		<!-- Content
 		============================================= -->
 		<section id="content">
-
 			<section id="slider" class="slider-element full-screen clearfix" style="background: url('images/cullen/GOPR1405.jpg'); background-repeat: no-repeat; background-size: cover;">
-				
 				<div class="container-fluid clearfix vertical-middle">
 	
 					<div class="heading-block title-center nobottomborder">
@@ -170,18 +143,10 @@
 					<div id="countdown-ex1" class="countdown countdown-large coming-soon divcenter bottommargin" style="max-width:700px;"></div>
 	
 					<div class="divider divider-center divider-short divider-margin"><i class="icon-time"></i></div>
-
-					
-	
 				</div>
-
-				
-	
 			</section>
-
-			
-
-		</section><!-- #content end -->
+		</section>
+		<!-- #content end -->
 
 		<!-- Footer
 		============================================= -->
@@ -211,11 +176,8 @@
 									<abbr title="Phone Number"><strong>Phone:</strong></abbr> (+44) 1542 840701<br>
 									<abbr title="Email Address"><strong>Email:</strong></abbr> info@cullencrc.org.uk
 								</div>
-
 							</div>
-
 						</div>
-
 					</div>
 
 					<div class="col_two_fifth col_last">
@@ -285,16 +247,12 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="js/functions.js"></script>
-
 	<script>
-		
 		jQuery(document).ready( function($){
 			var newDate = new Date(2018, 8, 31);
 			$('#countdown-ex1').countdown({until: newDate});
 		});
 	</script>
-
-	
 
 </body>
 </html>
