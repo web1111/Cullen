@@ -35,11 +35,11 @@
 			transform: translateY(-40%);
 			
 			margin: 5px;
-			padding: 0 20px;
+			padding: 0 15px;
 			font-size: 14px;
 			height: 40px;
 			line-height: 40px;
-			/*background-color: #C02942;*/
+			/*background-color: #CD2C46;*/
 
 		}
 
@@ -51,29 +51,16 @@
 			margin-right: auto !important;
 		}
 
-	
-		
 	</style>
-
 </head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73955722-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-73955722-2');
-</script>
 
 <body class="stretched">
 
 	<!-- Document Wrapper
 	============================================= -->
-	<div id="wrapper" class="clearfix" style="animation-duration: 1500ms;" >
+	<div id="wrapper" class="clearfix" style="animation-duration: 200ms;" >
 			
-		<!-- Header
-		============================================= -->
 		<header id="header" class="transparent-header style-2 semi-transparent not-dark" data-sticky-class="not-dark">
 				
 			<div id="header-wrap" >	
@@ -83,72 +70,67 @@
 						<div id="primary-menu-trigger"><i class="icon-reorder "></i></div>
 
 						<div id="logo">
-							<a href="#" data-scrollto="#header" class="standard-logo" data-dark-logo="images/textlogo-dark.png"><img src="images/textlogo.png" alt="cullencrc.org.uk"></a>
-							<a href="#" data-scrollto="#header" class="retina-logo" data-dark-logo="images/textlogo-dark@2x.png"><img src="images/textlogo@2x.png" alt="cullencrc.org.uk"></a>
+							<a href="index.html" class="standard-logo" data-dark-logo="images/textlogo-dark.png"><img src="images/textlogo.png" alt="cullencrc.org.uk"></a>
+							<a href="index.html" class="retina-logo" data-dark-logo="images/textlogo-dark@2x.png"><img src="images/textlogo@2x.png" alt="cullencrc.org.uk"></a>
 						</div><!-- #logo end -->
 
 						<!-- Primary Navigation
 						============================================= -->
 						<nav id="primary-menu" class="style-2 center not-dark noborder">
-
 								<ul class="sf-js-enabled" style="touch-action: pan-y;">
-									<li><a href="#" data-scrollto="#header" data-offset="100"><div>Home</div></a></li>
-									<li><a href="#" data-scrollto="#content" data-offset="100"><div>Facilities</div></a>
-										<ul>
-											<li><a href="#" data-scrollto="#content" data-offset="100"><div>Community Centre</div></a></li>
-											<li><a href="#" data-scrollto="#content" data-offset="100"><div>Residential Centre</div></a></li>
-											
+									<li class="current"><a href="#" data-scrollto="header"><div>Home</div></a></li>
+									<li><a href="facilities.html" ><div>Facilities</div></a></li>
+									<li><a href="#"><div>Activities</div></a>
+										<ul style="display: none;">
+											<li><a href="activities-centre.html"><div>Available at the Centre</div></a></li>
+											<li><a href="activities-cullen.html"><div>In and around Cullen</div></a></li>
 										</ul>
 									</li>
-									<li><a href="#" data-scrollto="#content" data-offset="100"><div>Activities</div></a></li>
-									<li><a href="#" data-scrollto="#content" data-offset="100"><div>Whats On</div></a></li>
-									<li><a href="#" data-scrollto="#content" data-offset="100"><div>Bookings</div></a></li>
-									<li><a href="#" data-scrollto="#content" data-offset="100"><div>About</div></a>
-										<ul>
-											<li><a href="#" data-scrollto="#content" data-offset="100"><div>Things to See &amp; Do</div></a></li>
-											<li><a href="#" data-scrollto="#content" data-offset="100"><div>Local Amenities</div></a></li>
-											<li><a href="#" data-scrollto="#content" data-offset="100"><div>Getting Here</div></a></li>
-											<li><a href="#" data-scrollto="#content" data-offset="100"><div>Who we are</div></a></li>
-											<li><a href="#" data-scrollto="#content" data-offset="100"><div>Gallery</div></a></li>
-										</ul>
-									</li>
-									
-									<li><a href="#" data-scrollto="#content" data-offset="100"><div class="button  button-circle button-red button-3d">Support Us</div></a></li>
+									<li><a href="whats-on.html"><div>Whats On</div></a></li>
+									<li><a href="bookings.html"><div>Bookings</div></a></li>
+									<li><a href="more.html"><div>More</div></a></li>
+									<li><a href="support-us.html"><div class="button  button-circle button-red button-border">Support Us</div></a></li>
 								</ul>
 						</nav><!-- #primary-menu end -->
 
 					</div>
+					
 
 				</div>
-				
-
+				<div class="promo promo-dark promo-flat promo-center nobottommargin" style="height: 100px; padding: 10px 0px;">
+						<h3 center>FUN DAY - SATURDAY 22nd SEPTEMBER (~11am to 3pm). Official Re-Opening Celebration</h3>
+						<span>Lots of fun activities for the all the family, teas/coffees, bouncy castle, BBQ and more. <u>We hope to see you there!</u></span>
+				</div>
 		</header><!-- #header end -->
 		
-		<section id="slider" class="slider-element slider-parallax swiper_wrapper full-screen clearfix slider-parallax-visible" data-autoplay="15000" data-loop="true">
+		
+		<section id="slider" class="slider-element slider-parallax swiper_wrapper full-screen clearfix slider-parallax-visible header-stick nobottommargin" data-autoplay="15000" data-loop="true">
 			<div class="slider-parallax-inner">
 				<div class="swiper-container swiper-parent swiper-container-horizontal" style="cursor: -webkit-grab;">
 					<div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
-						<div class="swiper-slide" style="background-image: url('images/cullen/gopr1358.jpg');">
+						<div class="swiper-slide" style="background-image: url('images/cullen/home1.jpg');">
 							<div class="container center clearfix">
 								<div class="slider-caption slider-caption-center dark">
-									<img class="logo-page-center" src="images/logo-blue250.png" alt="cullen crc logo">
+										
+									<img class="logo-page-center" src="images/logo-red250.png" alt="cullen crc logo">
 									<h1 data-caption-animate="fadeInUp" data-caption-delay="100">Not just for locals - welcome ALL!</h1>
+									
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide" style="background-image: url('images/cullen/gopr1348.jpg');">
+						<div class="swiper-slide" style="background-image: url('images/cullen/home2.jpg');">
 							<div class="container clearfix">				
 								<div class="slider-caption slider-caption-center dark">
 										<img class="logo-page-center" src="images/logo-orange250.png" style="float: right;" alt="cullen crc logo">
-										<h3 data-caption-animate="fadeInUp" data-caption-delay="100">Run by local volunteers, we are dependent on support and funding from our extended community, helping to keep our facilities open &amp; available for all</h3>
+										<h3 data-caption-animate="fadeInUp" data-caption-delay="100">As a registered charity run by local volunteers, we're dependent on support and funding from our extended community, helping to keep our facilities open &amp; available for all</h3>
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide" style="background-image: url('images/cullen/gopr1392.jpg'); background-position: center top;">
+						<div class="swiper-slide" style="background-image: url('images/cullen/home3.jpg'); background-position: center top;">
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center dark">
 									<img class="logo-page-center" src="images/logo-green250.png" style="float: left;" alt="cullen crc logo">
-									<h3 data-caption-animate="fadeInUp" data-caption-delay="100">We provide group accommodation for visitors from near and far, as well as offer a range of facilities available for bookings throughout the year</h3>
+									<h3 data-caption-animate="fadeInUp" data-caption-delay="100">To help support our aims, we provide group accommodation for visitors from near and far, as well as offer a range of activities and facilities available for bookings throughout the year</h3>
 								</div>
 							</div>
 						</div>
@@ -167,35 +149,113 @@
 		<!-- Content
 		============================================= -->
 		<section id="content">
-
-			<section id="slider" class="slider-element full-screen clearfix" style="background: url('images/cullen/GOPR1405.jpg'); background-repeat: no-repeat; background-size: cover;">
-				
-				<div class="container-fluid clearfix vertical-middle">
-	
-					<div class="heading-block title-center nobottomborder">
-						<h1>Site is Under Construction</h1>
-						<h3>Please check back again soon</h3>
+			<div class="content-wrap">
+				<div class="container clearfix header-stick">
+					<div style="margin-top:50px;">
+							<h3 class="center"> 
+									We provide a range of indoor and outdoor facilities for community groups, activities &amp; social events, as well as group accommodation for our visitors to Cullen 
+							</h3>
 					</div>
-	
-					<div id="countdown-ex1" class="countdown countdown-large coming-soon divcenter bottommargin" style="max-width:700px;"></div>
-	
-					<div class="divider divider-center divider-short divider-margin"><i class="icon-time"></i></div>
-
-					
-	
-				</div>
-
+				</div>	
 				
-	
-			</section>
+				<div class="container clearfix bottommargin-lg">
+					<div class="col_one_third">
+						<div class="feature-box media-box">
+							<div class="fbox-media">
+								<img src="images/ccrc-activities/small/knitters1.jpg" alt="Our Charitable Aims">
+							</div>
+							<div class="fbox-desc">
+								<h3>Our Charitable Aims<span class="subtitle">Together for the common good of Cullen</span></h3>
+								<p>
+									Our aims are to provide recreational facilities at Cullen Community Centre for the benefit of all members of the public, with priority given to the community.
+									They also include the general advancement of community development in Cullen.
 
-			
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col_one_third nobottommargin">
+					<div class="feature-box media-box">
+					<div class="fbox-media">
+					<img src="images/cullen/small/CullenTown1.jpg" alt="Community Development">
+					</div>
+					<div class="fbox-desc">
+					<h3>Community Development<span class="subtitle">Supporting the needs of the community</span></h3>
+					<p>Good community development is action that helps us to recognise and develop our own local abilities and potential, and to organise ourselves to respond to the problems and needs which we all share.
+						<ul style="margin-left:15px;">
+							<li>to create wealth and give everyone access to its benefits</li>
+							<li>to care for all its members, when they need it, throughout their life span</li>
+							<li>to provide an environment that is safe and attractive</li>
+							<li>to enable people to express and celebrate their creativity and diverse cultures</li>
+							<li>to enable everyone to participate in decisions that affect their lives</li>
+						</ul>
+					</p>	
+				</div>
+					</div>
+					</div>
+					<div class="col_one_third nobottommargin col_last">
+					<div class="feature-box media-box">
+					<div class="fbox-media">
+					<img src="images/cullen/small/3kings2.jpg" alt="Three Kings Cullen Association">
+					</div>
+					<div class="fbox-desc">
+					<h3>Three Kings Cullen Association<span class="subtitle">How we came about</span></h3>
+					<p>The centre is run by a local charity called The Three Kings Cullen Association, which is directed by a team of local volunteers. In 2017, the local authority announced that it was going to close the Cullen CRC by June 2018 with a view to demolishing the building in 2019 unless the people of Cullen took on the building as a CAT (Community Asset Transfer).
+						A community meeting, attended by around 100 people, was held in the Cullen Town Hall where it became clear that the will of the people of Cullen was to keep the centre open.</p>
+						
+					</div>
+					</div>
+					</div>
+					</div>
 
+
+					<div class="container clearfix bottommargin-lg">
+							<div class="col_full">
+								<p>
+									<img src="images/cullen/sunnyside1.jpg" style="height: 50%; width: 50%; padding-right: 10px;" align="right" valign="top" vspace="5" hspace="5" alt="Aerial View 1" draggable="false">
+									<p> 
+										The town of Cullen is a fantastic family holiday destination and great place to live, with many things to see and do right on our own doorstep, and all within easy walking distance. From relaxing on our pristine award winning beaches, to a whole variety of adventure activities.
+									</p>
+									<p>
+										Cullen also provides a convenient base location from which to spend the odd day out off exploring further afield across Scotland's North East and Highlands, all within easy driving distance. 
+									</p>
+									<p>
+										Cullen Community &amp; Residential Centre specialises in providing affordable accommodation for groups of visitors. In the past we've accommodated many different visitor groups, such as for school trips, scouts, guides &amp; brownies, company team building, geologists on field trips exploring the interesting geology of the area, as well as various groups from oversees, and many others, often returning to visit Cullen year after year.
+									</p>
+									<p>
+										Feel free to take a wander through our website and get a feel for what Cullen and our Community Centre have to offer you.
+									</p>
+								</p>
+							</div>
+						</div>
+
+				<div class="container clearfix">
+					<div class="nobottommargin">
+						<div class="col_full portfolio-single-image masonry-thumbs grid-4" data-big="4" data-lightbox="gallery" style="position: relative; height: 844px;">
+							<a href="images/ccrc-outdoors/cullencrc2.jpg" data-lightbox="gallery-item" style="width: 281px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="images/ccrc-outdoors/small/cullencrc2.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+							<a href="images/ccrc-outdoors/cullencrc3.jpg" data-lightbox="gallery-item" style="width: 281px; position: absolute; left: 281px; top: 0px;"><img class="image_fade" src="images/ccrc-outdoors/small/cullencrc3.jpg" alt="Gallery Thumb 2" style="opacity: 1;"></a>
+							<a href="images/ccrc-outdoors/cullencrc4.jpg" data-lightbox="gallery-item" style="width: 562px; position: absolute; left: 0px; top: 211px;"><img class="image_fade" src="images/ccrc-outdoors/small/cullencrc4.jpg" alt="Gallery Thumb 3" style="opacity: 1;"></a>
+							<a href="images/ccrc-outdoors/cullencrc1.jpg" data-lightbox="gallery-item" style="width: 281px; position: absolute; left: 562px; top: 0px;"><img class="image_fade" src="images/ccrc-outdoors/small/cullencrc1.jpg" alt="Gallery Thumb 4" style="opacity: 1;"></a>
+							<a href="images/ccrc-outdoors/cullencrc5.jpg" data-lightbox="gallery-item" style="width: 281px; position: absolute; left: 562px; top: 211px;"><img class="image_fade" src="images/ccrc-outdoors/small/cullencrc5.jpg" alt="Gallery Thumb 5" style="opacity: 1;"></a>
+							<a href="images/ccrc-outdoors/cullencrc6.jpg" data-lightbox="gallery-item" style="width: 281px; position: absolute; left: 562px; top: 422px;"><img class="image_fade" src="images/ccrc-outdoors/small/cullencrc6.jpg" alt="Gallery Thumb 6" style="opacity: 1;"></a>
+							<a href="images/ccrc-outdoors/cullencrc7.jpg" data-lightbox="gallery-item" style="width: 281px; position: absolute; left: 0px; top: 632.75px;"><img class="image_fade" src="images/ccrc-outdoors/small/cullencrc7.jpg" alt="Gallery Thumb 7"></a>
+							<a href="images/ccrc-outdoors/cullencrc8.jpg" data-lightbox="gallery-item" style="width: 281px; position: absolute; left: 281px; top: 632.75px;"><img class="image_fade" src="images/ccrc-outdoors/small/cullencrc8.jpg" alt="Gallery Thumb 8"></a>
+							<a href="images/ccrc-outdoors/cullencrc9.jpg" data-lightbox="gallery-item" style="width: 281px; position: absolute; left: 562px; top: 633px;"><img class="image_fade" src="images/ccrc-outdoors/small/cullencrc9.jpg" alt="Gallery Thumb 9" style="opacity: 1;"></a>
+						</div>
+
+						<div class="clear"></div>
+
+					</div>
+
+					<div class="col_full">
+						<iframe style="width: 100%; height: 500px; border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyANxnrrbQk_FT4c-S_uFCbh-cZ94XMH0oA%20&q=Cullen+Community+Centre" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
 		</section><!-- #content end -->
 
 		<!-- Footer
 		============================================= -->
-		<footer id="footer" class="dark notopborder">
+		<footer id="footer" class="dark notopborder notopmargin">
 
 			<div class="container">
 
@@ -221,7 +281,6 @@
 									<abbr title="Phone Number"><strong>Phone:</strong></abbr> (+44) 1542 840701<br>
 									<abbr title="Email Address"><strong>Email:</strong></abbr> info@cullencrc.org.uk
 								</div>
-
 							</div>
 
 						</div>
@@ -229,11 +288,8 @@
 					</div>
 
 					<div class="col_two_fifth col_last">
-
 						<div class="widget clearfix" style="margin-bottom: -20px;">
-
 							<div class="row">
-
 								<div class="col-lg-6 clearfix bottommargin-sm">
 									<a href="https://www.facebook.com/cullencrc/" target="_blank" class="social-icon si-dark si-colored si-facebook nobottommargin" style="margin-right: 10px;">
 										<i class="icon-facebook"></i>
@@ -241,11 +297,8 @@
 									</a>
 									<a href="https://www.facebook.com/cullencrc/" target="_blank"><small style="display: block; margin-top: 3px;"><strong>Follow us</strong><br>on Facebook</small></a>
 								</div>
-
 							</div>
-
 						</div>
-
 					</div>
 
 				</div><!-- .footer-widgets-wrap end -->
@@ -260,7 +313,8 @@
 
 					<div class="col_half">
 						Copyrights &copy; 2018 All Rights Reserved by The Three Kings Cullen Association<br>
-						<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+						Registerd Scottish Charity# SC048529<br><br>
+						<!--<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>-->
 					</div>
 
 					<div class="col_half col_last tright">
@@ -269,8 +323,7 @@
 								<i class="icon-facebook"></i>
 								<i class="icon-facebook"></i>
 							</a>
-
-
+						</div>
 						<div class="clear"></div>
 
 						<i class="icon-envelope2"></i> info@cullencrc.org.uk <span class="middot">&middot;</span> <i class="icon-phone"></i> (+44) 1542 840701
@@ -296,14 +349,6 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="js/functions.js"></script>
-
-	<script>
-		
-		jQuery(document).ready( function($){
-			var newDate = new Date(2018, 8, 31);
-			$('#countdown-ex1').countdown({until: newDate});
-		});
-	</script>
 
 	
 
