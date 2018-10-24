@@ -20,14 +20,14 @@
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Cullen Community and Residential Centre">
 	<meta property="og:url" content="https://www.cullencrc.org.uk/">
-	<meta property="og:description" content="Cullen Community and Residential Centre is run by a local charity called The Three Kings Cullen Association, which is directed by a team of local volunteers. The Centre provides facilities for community activities, as well as affordable group accommodation for visitors to Cullen">
+	<meta property="og:description" content="Cullen Community & Residential Centre provides facilities for community group activities, as well as affordable accommodation for groups of visitors to Cullen.">
 	<meta property="og:site_name" content="Cullen Community and Residential Centre">
 	<meta property="og:image" content="https://www.cullencrc.org.uk/images/logo-red200.png">
 
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@CullenCRC">
 	<meta name="twitter:title" content="Cullen Community and Residential Centre">
-	<meta name="twitter:description" content="Cullen Community and Residential Centre is run by a local charity called The Three Kings Cullen Association, which is directed by a team of local volunteers. The Centre provides facilities for community activities, as well as affordable group accommodation for visitors to Cullen">
+	<meta name="twitter:description" content="Cullen Community & Residential Centre provides facilities for community group activities, as well as affordable accommodation for groups of visitors to Cullen.">
 	<meta name="twitter:creator" content="@CullenCRC">
 	<meta name="twitter:image" content="https://www.cullencrc.org.uk/images/logo-red200.png">
 
@@ -36,6 +36,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700|Lato:300,400,400i,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
 	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
@@ -51,35 +52,6 @@
 	============================================= -->
 	<title>Facilities - CullenCRC</title>
 
-	<style>
-		
-		#header.semi-transparent {
-			background-color: rgba(255,255,255,0.4); 
-			}
-
-		#primary-menu .button {
-			position: relative;
-			top: 60%;
-			transform: translateY(-40%);
-			
-			margin: 5px;
-			padding: 0 15px;
-			font-size: 14px;
-			height: 40px;
-			line-height: 40px;
-			/*background-color: #CD2C46;*/
-
-		}
-
-		.logo-page-center {
-			max-width: 30%;
-			position: relative !important;
-			float: none !important;
-			margin-left: auto !important;
-			margin-right: auto !important;
-		}
-
-	</style>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73955722-2"></script>
 	<script>
@@ -97,54 +69,66 @@
 	<!-- Document Wrapper
 	============================================= -->
 	<div id="wrapper" class="clearfix" style="animation-duration: 200ms;" >
-			
+		<div id="top-bar">
+			<div class="container clearfix">
+				<div class="col_half nobottommargin ">
+					<div class="top-links">
+						<ul class="sf-js-enabled" style="touch-action: pan-y;">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="support-us.html" style="color:darkorange;">Support Us</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col_half fright col_last nobottommargin dark">
+					<div id="top-social">
+						<ul>
+							<li><a href="https://www.facebook.com/cullencrc/" target="_blank" class="si-facebook" data-hover-width="108.6319" style="width: 40px;" title="Facebook"><span class="ts-icon"><i class="icon-facebook"></i></span><span class="ts-text">Facebook</span></a></li>
+							<li><a href="https://twitter.com/CullenCRC" target="_blank" class="si-twitter" data-hover-width="94.9688" style="width: 40px;" title="Twitter"><span class="ts-icon"><i class="icon-twitter"></i></span><span class="ts-text">Twitter</span></a></li>
+							<li><a href="https://www.instagram.com/cullencrc/" target="_blank" class="si-instagram" data-hover-width="110.5938" style="width: 40px;" title="Instagram"><span class="ts-icon"><i class="icon-instagram2"></i></span><span class="ts-text">Instagram</span></a></li>
+							<li><a href="tel:+44 1542 840701" class="si-call" data-hover-width="155.872" style="width: 40px;" title="+44 1542 840701"><span class="ts-icon"><i class="icon-call"></i></span><span class="ts-text">(+44) 1542 840701</span></a></li>
+							<li><a href="mailto:info@cullencrc.org.uk" class="si-email3" data-hover-width="152.608" style="width: 40px;" title="info@cullencrc.org.uk"><span class="ts-icon"><i class="icon-email3"></i></span><span class="ts-text">info@cullencrc.org.uk</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- Header
 		============================================= -->
-		<header id="header" class="transparent-header style-2 semi-transparent not-dark" data-sticky-class="not-dark">
-				
+		<header id="header" class="transparent-header semi-transparent split-menu not-dark" data-sticky-class="not-dark">
 			<div id="header-wrap" >	
+				<div class="container clearfix">
+					<div id="primary-menu-trigger"><i class="icon-reorder "></i></div>
 
-					<div class="container clearfix">
+					<div id="logo">
+						<a href="index.html" class="standard-logo" data-dark-logo="images/textlogo-dark.png"><img src="images/textlogo.png" alt="cullencrc.org.uk"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="images/textlogo-dark@2x.png"><img src="images/textlogo@2x.png" alt="cullencrc.org.uk"></a>
+					</div><!-- #logo end -->
 
-						<div id="primary-menu-trigger"><i class="icon-reorder "></i></div>
-
-						<div id="logo">
-							<a href="index.html" class="standard-logo" data-dark-logo="images/textlogo-dark.png"><img src="images/textlogo.png" alt="cullencrc.org.uk"></a>
-							<a href="index.html" class="retina-logo" data-dark-logo="images/textlogo-dark@2x.png"><img src="images/textlogo@2x.png" alt="cullencrc.org.uk"></a>
-						</div><!-- #logo end -->
-
-						<!-- Primary Navigation
-						============================================= -->
-						<nav id="primary-menu" class="style-2 center not-dark noborder">
-								<ul class="sf-js-enabled" style="touch-action: pan-y;">
-									<li><a href="index.html"><div>Home</div></a></li>
-									<li class="current"><a href="#" data-scrollto="header"><div>Facilities</div></a></li>
-									<li><a href="activities.html"><div>Activities</div></a></li>
-									<li><a href="whats-on.html"><div>Whats On</div></a></li>
-									<li><a href="bookings.html"><div>Bookings</div></a></li>
-									<li><a href="more.html"><div>More</div></a></li>
-									<li><a href="support-us.html"><div class="button  button-circle button-red button-border">Support Us</div></a></li>
-								</ul>
-						</nav><!-- #primary-menu end -->
-
-					</div>
-
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu" class="clearfix noborder">
+						<ul class="sf-js-enabled" style="touch-action: pan-y;">
+							<li class="current"><a href="#" data-scrollto="header"><div>Facilities</div></a></li>
+							<li><a href="activities.html"><div>Activities</div></a></li>
+						</ul>
+						<ul class="sf-js-enabled" style="touch-action: pan-y;">
+							<li><a href="whats-on.html"><div>Whats On</div></a></li>
+							<li><a href="more.html"><div>More</div></a></li>
+						</ul>
+					</nav><!-- #primary-menu end -->
 				</div>
+			</div>
 		</header><!-- #header end -->
 
 		<section class="page-title page-title-dark page-title-left" id="page-title" style='padding: 190px 0px; background-image: url("images/cullen/facilities.jpg"); background-size: cover; background-position: center bottom;' >
-			<div class="container clearfix" style="top: 50px;">
-				<div class="col_one_fifth" >
-					<img style="vertical-align:bottom;" src="images/logo-red200.png" alt="cullen crc logo">
-				</div>
-				<div class="col_four_fifth col_last dark" style="top: 50px;">
-					<h1>Looking for a venue for your group?</h1>
-					<h3>Rooms and spaces available for group activities and residential bookings</h3>
+			<div class="container clearfix" >
+				<div class="banner-heading">
+					<img src="images/logo-red200.png" alt="cullen crc logo">
+					<h1>Looking to book a Room?</h1>
+					<h3 class="dark">Rooms available for group activities and residential guests</h3>
 				</div>
 			</div>
 		</section>
-
-
 
 		<!-- Content
 		============================================= -->
@@ -716,26 +700,69 @@
 							</article>
 						</div>
 
-						<div class="container clearfix">
-						
-						<h4>A non-refundable deposit of £25.00 per booking applies.</h4>
-						<p>
-							<h6>NOTES</h6>
-							<ol>
-								<li>Use of facilities for activities that are for business purposes will have a surcharge of 25% 
-									(Meeting room £15.60) (Sports hall £15.60)</li>
-								<li>All bookings for Hall and Room Hire will be charged at full cost if not cancelled in advance.</li>
-								<li>Bookings for any area can be made up to a maximum of 24 months in advance and will be reviewed annually.</li>
-								<li>Special Needs groups are entitled to free use of the facility during normal opening hours.</li>
-								<li>Charitable status number required upon booking to qualify for concessionary rate. </li>
-								<li>The Three Kings Cullen Association reserve the right to revise their scale of charges, therefore, rates quoted may not be those prevailing at date reservation is required.</li>
-							</ol>							
-						</p>
-						<span>* concessionary prices applies to children under 16, over 60's or charities</span><br/>
+						<div class="container clearfix bottommargin-sm">
+							<h4>A non-refundable deposit of £25.00 per booking applies.</h4>
+							<p>
+								<h6>NOTES</h6>
+								<ol>
+									<li>Use of facilities for activities that are for business purposes will have a surcharge of 25% 
+										(Meeting room £15.60) (Sports hall £15.60)</li>
+									<li>All bookings for Hall and Room Hire will be charged at full cost if not cancelled in advance.</li>
+									<li>Bookings for any area can be made up to a maximum of 24 months in advance and will be reviewed annually.</li>
+									<li>Special Needs groups are entitled to free use of the facility during normal opening hours.</li>
+									<li>Charitable status number required upon booking to qualify for concessionary rate. </li>
+									<li>The Three Kings Cullen Association reserve the right to revise their scale of charges, therefore, rates quoted may not be those prevailing at date reservation is required.</li>
+								</ol>							
+							</p>
+							<span>* concessionary prices applies to children under 16, over 60's or charities</span><br/>
+						</div>
 					</div>
 
-					</div>
-				
+					<div class="container clearfix">
+							<div class="title-block">
+									<h2><span>How to place a Booking</span></h2>
+								</div>
+						<div>
+							<h4 class="left">
+									We're currently reviewing various tools to find the optimum online booking system to make it easier to enable availability checking, booking and handling payments from within this site. We hope to have this in place soon. Thank you for your patience.
+							</h4>
+							<h4 class="left"> 
+									Placing residential bookings or hiring rooms still needs to be done manually, as per the general procedure below. </h4>
+							
+							
+						</div>
+					
+
+
+					<ul class="process-steps process-5 clearfix">
+							<li>
+							<div class="i-bordered i-circled divcenter icon-calendar"></div>
+							<h5>Review our Facilities and Contact to Check Availability</h5>
+							<h6>email: bookings@cullencrc.org.uk<br/>
+							phone: (+44) 1542 840701</h6>
+							</li>
+							<li>
+							<div class="i-bordered i-circled divcenter icon-pencil2"></div>
+							<h5>Supply Your Details</h5>
+							</li>
+							<li>
+							<div class="i-bordered i-circled divcenter icon-money"></div>
+							<h5>Supply Billing Info &amp; Deposit Where Required</h5>
+							</li>
+							</li>
+							<li>
+							<div class="i-bordered i-circled divcenter  icon-like"></div>
+							<h5>Receive Booking Confirmation</h5>
+							</li>
+							<li>
+							<div class="i-alt i-circled bgcolor divcenter icon-ok"></div>
+							<h5>Supply Final Payment upon Delivery</h5>
+							</li>
+							</ul>
+				</div>
+
+
+
 				</div>
 			</div>
 		</section>
@@ -770,8 +797,8 @@
 									</div>
 								</div>
 								<div class="widget clearfix nobottommargin" style="margin-bottom: -20px;">
-										<div class="row ">
-											<div class="col-lg-4 clearfix">
+										<div class="row">
+											<div class="col-lg-4 clearfix bottommargin-sm">
 												<a href="https://www.facebook.com/cullencrc/" target="_blank" class="social-icon si-dark si-colored si-facebook nobottommargin" style="margin-right: 10px;">
 													<i class="icon-facebook"></i>
 													<i class="icon-facebook"></i>
@@ -779,7 +806,7 @@
 												<a href="https://www.facebook.com/cullencrc/" target="_blank"><small style="display: block; margin-top: 3px;"><strong>Follow us</strong><br>on Facebook</small></a>
 											</div>
 			
-											<div class="col-lg-4 clearfix">
+											<div class="col-lg-4 clearfix bottommargin-sm">
 												<a href="https://twitter.com/CullenCRC"  target="_blank" class="social-icon si-dark si-colored si-twitter nobottommargin" style="margin-right: 10px;">
 												<i class="icon-twitter"></i>
 												<i class="icon-twitter"></i>
@@ -787,7 +814,7 @@
 												<a href="https://twitter.com/CullenCRC"  target="_blank"><small style="display: block; margin-top: 3px;"><strong>Follow us</strong><br>on Twitter</small></a>
 												</div>
 	
-												<div class="col-lg-4 clearfix">
+												<div class="col-lg-4 clearfix nobottommargin">
 														<a href="https://www.instagram.com/cullencrc/"  target="_blank" class="social-icon si-dark si-colored si-instagram nobottommargin" style="margin-right: 10px;">
 														<i class="icon-instagram"></i>
 														<i class="icon-instagram"></i>
@@ -807,15 +834,15 @@
 								<p>The Three Kings Cullen Association is a democratic organisation owned by local people. If you would like to show your support and become a member, then we invite you to complete and return a signed copy of our membership form, available for download below.
 								<br/><u><strong>Membership is FREE!</strong></u>
 								</p>
-								<div class="row bottommargin-sm">
-									<div class="col-lg-6 clearfix">
+								<div class="row">
+									<div class="col-lg-6 clearfix bottommargin-sm">
 										<a href="docs/Membership Info.pdf" class="social-icon si-dark nobottommargin" style="background-color: orange;" target="_blank"  style="margin-right: 10px;">
 											<i class="icon-download2"></i>
 											<i class="icon-download2"></i>
 										</a>
 										<a href="docs/Membership Info.pdf" target="_blank"><small style="display: block; margin-top: 3px;">Membership Info</small></a>
 									</div>
-									<div class="col-lg-6 clearfix">
+									<div class="col-lg-6 clearfix bottommargin-sm">
 										<a href="docs/Membership Form.pdf" class="social-icon si-dark nobottommargin" style="background-color: orangered;" target="_blank"  style="margin-right: 10px;">
 											<i class="icon-download2"></i>
 											<i class="icon-download2"></i>
